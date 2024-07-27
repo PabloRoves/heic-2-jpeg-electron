@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policiy" content="default-src 'self'; script-src 'self'" />
+    <meta http-equiv="X-Content-Security-Policiy" content="default-src 'self'; script-src 'self'" />
+    <link rel="stylesheet" href="index.css" />
+    <title>HEic to JPEG</title>
+  </head>
+  <body>
+    <div id="root">
+      <div class="appContainer">
+        <h1>Heic to JPEG</h1>
+        <div class="card">
+          <input type="file" id="inputFileImage" onChange="" accept=".heic" />
+          <button id="btnCreate" onClick="">Create JPEG</button>
+        </div>
+      </div>
+    </div>
+    <script defer src="convert.js"></script>
+  </body>
+</html>
